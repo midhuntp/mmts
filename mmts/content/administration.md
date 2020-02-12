@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Administration"
 menu: "main"
 weight: 50
 
@@ -7,5 +7,3 @@ weight: 50
 comment: false
 mathjax: false
 ---
-## മലനട മഹാദേവർ ക്ഷേതൃം
-

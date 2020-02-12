@@ -17,87 +17,39 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"           # Default language to use
-[languages.en]
-  languageCode = "en"
 
-[author]                  # essential                     # 必需
-  name = "xianmin"
+# [languages]
+#   [languages.en]
+#     contentDir = "content/english"
+#     languageName = "English"
+#     weight = 10
+#   [languages.fr]
+#     contentDir = "content/french"
+#     languageName = "Français"
+#     weight = 20
 
-[sitemap]                 # essential                     # 必需
+
+[author]                  # essential                     
+  name = "Malanada Mahadevar Temple"
+
+[sitemap]                 # essential                     
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]             # config your menu              # 配置目录
-  name = "Home"
-  weight = 10
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "About"
-  weight = 20
-  identifier = "about"
-  url = "/about"
-
-[[menu.main]]
-  name = "Pooja"
-  weight = 30
-  identifier = "pooja"
-  url = "/pooja/"
-  hasChildren = true
-[[menu.main]]
-  name = "Pooja Timing"
-  parent = "pooja"
-  identifier = "pooja-timing"
-  url = "/pooja/timings/"
-[[menu.main]]
-  name = "Offerings"
-  parent = "pooja"
-  identifier = "offerings"
-  url = "/pooja/offerings/"
 
 
-[[menu.main]]
-  name = "Festivals"
-  weight = 40
-  identifier = "categories"
-  url = "/festivals/"
-[[menu.main]]
-  name = "Administration"
-  weight = 50
-  url = "/administration"
 
-### Gallery Menu  
-[[menu.main]]
-  name = "Gallery"
-  weight = 60
-  url = "/gallery"
-  hasChildren = true
-[[menu.main]]
-  name = "Video"
-  parent = "Gallery"
-  identifier = "video-gallery"
-  url = "/gallery/video/"
-[[menu.main]]
-  name = "Photos"
-  parent = "Gallery"
-  identifier = "photo-gallery"
-  url = "/gallery/photos/"
-
-[[menu.main]]
-  name = "Contact us"
-  weight = 70
-  url = "/contact-us"
 
 
 [params]
-  since = "2020"            # Site creation time          # 站点建立时间
+  since = "2020"            # Site creation time          
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
 
-  # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "മലനട മഹാദേവർ ക്ഷേതൃം"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Hugo", "theme","jane"]
+  # site info (optional)                                  
+  logoTitle = "മലനട മഹാദേവർ ക്ഷേതൃം"        # default: the title value    
+  keywords = ["Malanada", "Mahadevar","temple"]
   description = "മലനട മഹാദേവർ ക്ഷേതൃം"
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
@@ -114,7 +66,7 @@ defaultContentLanguage = "en"           # Default language to use
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
-  [params.social]                                         # 社交链接
+  [params.social]                                        
     a-email = "mailto:your@email.com"
     d-facebook = "http://localhost:1313"
 
