@@ -2,7 +2,7 @@
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
 
-baseURL = "/"
+baseURL = "http://localhost:1313/"
 title = "Jane - A super concise theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
@@ -17,16 +17,16 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"           # Default language to use
+[languages]
+  [languages.en]
+    title = "Malanada Mahadevar temple"
+    languageName = "English"
+    weight = 1
+  [languages.ml]
+    title = "മലനട മഹാദേവർ ക്ഷേതൃം"
+    languageName = "മലയാളം"
+    weight = 2
 
-# [languages]
-#   [languages.en]
-#     contentDir = "content/english"
-#     languageName = "English"
-#     weight = 10
-#   [languages.fr]
-#     contentDir = "content/french"
-#     languageName = "Français"
-#     weight = 20
 
 [author]                  # essential                     
   name = "Malanada Mahadevar Temple"
@@ -42,7 +42,7 @@ defaultContentLanguage = "en"           # Default language to use
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  
-  logoTitle = "മലനട മഹാദേവർ ക്ഷേതൃം"        # default: the title value    
+  #logoTitle = "മലനട മഹാദേവർ ക്ഷേതൃം"        # default: the title value    
   keywords = ["Malanada", "Mahadevar","temple"]
   description = "മലനട മഹാദേവർ ക്ഷേതൃം"
 
