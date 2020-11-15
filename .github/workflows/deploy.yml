@@ -20,6 +20,13 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo
 
-
+      - name: Deploy build to Netlify
+        uses: South-Paw/action-netlify-deploy@v1.0.4
+        with:
+          github-token: ${{ secrets.GT }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          build-dir: './public'
+          draft: false
